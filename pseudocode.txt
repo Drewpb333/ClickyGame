@@ -1,0 +1,45 @@
+App.js will render game component
+
+header will be a function component imported to game component
+
+index.js will render this in a "root" #id encompassing the body of index.html
+
+public will contain 12 images of peanuts characters, along with a large horizontal image
+from peanuts
+
+Need to have a portfolio container?
+
+Game Class will have the following:
+
+the state in class will have score and highest score properties
+
+game class will render 12 images in different divs.  i can use bootstrap to create
+columns with ids to store each div(img).The shufflePhotos method can then 
+shuffle the photos and i'll put each image in a div from 1 to 12.
+
+Should I use absolute positioning for these 12 images?
+
+game class will have a method for shuffling images
+
+game class will execute a componentDidMount method that calls the shuffle images method
+
+game class will have a alreadyClicked method for dealing with images clicked
+more than once;
+alreadyClicked will have a data attribute hasBeenClicked with a boolean 
+assinged to each img element.
+if hasBeenClicked is true, a nested condition will check if this.state.score is
+greater than this.state.highestScore.  If true, then this.state.highestScore will
+be reset to this.state.score, and this.state.score will be reset to 0.
+If hasBeenClicked is false, then this.state.score will reset to 0.
+
+Have a footer with same color as header
+
+Add CSS code to app.js
+
+add a 20px(?) margin bottom for class "row"; make sure this works in bootstrap
+
+
+
+
+
+
