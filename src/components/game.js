@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
-import Header from './header';
-import franklin from '../../public/img/franklin.jpg';
-import linus from '../../public/img/linus.jpg';
-import lucy from '../../public/img/lucy.jpg';
-import marcy from '../../public/img/marcy.jpg';
-import olaf from '../../public/img/olaf.jpg';
-import peppermintPatty from '../../public/img/peppermint-patty.jpg';
-import pigpen from '../../public/img/pigpen.jpg';
-import rerun from '../../public/img/rerun.jpg';
-import sally from '../../public/img/sally.jpg';
-import schroeder from '../../public/img/schroeder.jpg';
-import snoopy from '../../public/img/snoopy.jpg';
-import woodstock from '../../public/img/woodstock.jpg';
+import franklin from '../img/franklin.jpg'
+import linus from '../img/linus.png';
+import lucy from '../img/lucy.png';
+import marcy from '../img/marcy.png';
+import olaf from '../img/olaf.jpg';
+import peanutsBanner from '../img/peanuts-banner.jpg'
+import peppermintPatty from '../img/peppermint-patty.png';
+import pigpen from '../img/pigpen.jpg';
+import rerun from '../img/rerun.jpg';
+import sally from '../img/sally.jpg';
+import schroeder from '../img/schroeder.jpg';
+import snoopy from '../img/snoopy.png';
+import woodstock from '../img/woodstock.jpg';
 
 const photosArr = [franklin, linus, lucy, marcy, olaf, peppermintPatty, pigpen, rerun, sally, schroeder, snoopy, woodstock];
 
@@ -41,17 +41,11 @@ class Game extends Component {
         this.setState({photos: arr});
     }
 
-    
-
     componentDidMount() {
         this.shufflePhotos(photosArr);
     }
 
-    displayPhotos = arr => (
-
-    )
-
-    alreadyClicked = hasBeenClicked => (
+    alreadyClicked = hasBeenClicked => {
         if(hasBeenClicked && this.score > this.highestScore){
             this.highestScore = this.score;
             this.score = 0;
@@ -61,46 +55,47 @@ class Game extends Component {
         }
         else{
             this.score ++;
+            this.shufflePhotos();
         }
-    )
+    }
 
     render() {
         return(
         <div className="peanuts-images">
             <div className="row">
                 <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[0]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[0]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[1]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[1]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[2]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[2]}></div>
                 <div className="col-2-xs"></div>
             </div>
             <div className="row">
                 <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[3]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[3]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[4]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[4]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[5]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[5]}></div>
                 <div className="col-2-xs"></div>
             </div>
             <div className="row">
                 <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[6]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[6]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[7]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[7]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[8]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[8]}></div>
                 <div className="col-2-xs"></div>
             </div>
             <div className="row">
                 <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[9]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[9]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[10]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[10]}></div>
                 <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={photos[11]}></div>
+                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[11]}></div>
                 <div className="col-2-xs"></div>
             </div>
         </div>)
