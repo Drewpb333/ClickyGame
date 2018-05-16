@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Header from './header';
 import franklin from '../img/franklin.jpg'
 import linus from '../img/linus.png';
 import lucy from '../img/lucy.png';
@@ -61,42 +62,54 @@ class Game extends Component {
 
     render() {
         return(
-        <div className="peanuts-images">
-            <div className="row">
-                <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[0]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[1]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[2]}></div>
-                <div className="col-2-xs"></div>
-            </div>
-            <div className="row">
-                <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[3]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[4]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[5]}></div>
-                <div className="col-2-xs"></div>
-            </div>
-            <div className="row">
-                <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[6]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[7]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[8]}></div>
-                <div className="col-2-xs"></div>
-            </div>
-            <div className="row">
-                <div className="col-2-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[9]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[10]}></div>
-                <div className="col-1-xs"></div>
-                <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[11]}></div>
-                <div className="col-2-xs"></div>
+        <div className="container-fluid">
+            <Header score={this.state.score} highestScore={this.state.score}/>
+            {/* <div id="peanuts-banner">
+                <img src={peanutsBanner} alt="Peanuts Banner"/>
+            </div> */}
+            <div className="peanuts-images">
+                <div className="row">
+                    <div className="col-2-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[0]}>
+                        <img src={this.state.photos[0]} className="img-thumbnail"/>
+                    </div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[1]}>
+                        <img src={this.state.photos[1]} className="img-thumbnail"/>
+                    </div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[2]}>
+                        <img src={this.state.photos[2]} className="img-thumbnail"/>
+                    </div>
+                    <div className="col-2-xs"></div>
+                </div>
+                <div className="row">
+                    <div className="col-2-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[3]}></div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[4]}></div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[5]}></div>
+                    <div className="col-2-xs"></div>
+                </div>
+                <div className="row">
+                    <div className="col-2-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[6]}></div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[7]}></div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[8]}></div>
+                    <div className="col-2-xs"></div>
+                </div>
+                <div className="row">
+                    <div className="col-2-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[9]}></div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[10]}></div>
+                    <div className="col-1-xs"></div>
+                    <div className="col-2-xs" hasBeenClicked={false} id={this.state.photos[11]}></div>
+                    <div className="col-2-xs"></div>
+                </div>
             </div>
         </div>)
     };
