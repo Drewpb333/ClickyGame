@@ -38,6 +38,17 @@ Add CSS code to app.js
 
 add a 20px(?) margin bottom for class "row"; make sure this works in bootstrap
 
+Differences:
+
+Has a card, header, and wrapper component
+
+.css for each file is located in each component
+
+game logic is in app.js
+
+has a photos .json for images
+
+uses a for loop in rendering
 
 
 
