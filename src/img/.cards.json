@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "franklin",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Franklin_%28Peanuts%29.png/130px-Franklin_%28Peanuts%29.png",
+      "count": 0
+    },
+    {
+      "id": 2,
+      "name": "linus",
+      "image": "https://vignette.wikia.nocookie.net/peanuts/images/4/4d/Linusvanpelt.gif/revision/latest?cb=20160508100121",
+      "count": 0
+    },
+    {
+      "id": 3,
+      "name": "lucy",
+      "image": "https://vignette.wikia.nocookie.net/peanuts/images/e/e9/Lucy_van_Pelt.png/revision/latest?cb=20171109074503",
+      "count": 0
+    },
+    {
+      "id": 4,
+      "name": "marcy",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/24/Marcie_from_Peanuts.png",
+      "count": 0
+    },
+    {
+      "id": 5,
+      "name": "olaf",
+      "image": "https://vignette.wikia.nocookie.net/peanuts/images/d/d0/Seven_peanuts_03-1-.jpg/revision/latest/scale-to-width-down/260?cb=20101130203219",
+      "count": 0
+    },
+    {
+      "id": 6,
+      "name": "peppermint-patty",
+      "image": "https://vignette.wikia.nocookie.net/peanuts/images/a/a0/Peppermint_Patty.png/revision/latest?cb=20160715071317",
+      "count": 0
+    },
+    {
+      "id": 7,
+      "name": "pigpen",
+      "image": "https://vignette.wikia.nocookie.net/peanuts/images/b/bd/Pigpen.jpg/revision/latest?cb=20160715070328",
+      "count": 0
+    },
+    {
+      "id": 8,
+      "name": "rerun",
+      "image": "https://static.comicvine.com/uploads/scale_medium/0/3125/4824496-rerun.jpg",
+      "count": 0
+    },
+    {
+      "id": 9,
+      "name": "sally",
+      "image": "https://vignette.wikia.nocookie.net/peanuts/images/a/a0/Sally-0.jpg/revision/latest?cb=20160619080818",
+      "count": 0
+    },
+    {
+      "id": 10,
+      "name": "schroeder",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/Schroeder_Piano.png/230px-Schroeder_Piano.png",
+      "count": 0
+    },
+    {
+      "id": 11,
+      "name": "snoopy",
+      "image": "https://vignette.wikia.nocookie.net/peanuts/images/7/79/Snoopyimage.jpg/revision/latest?cb=20160503074223",
+      "count": 0
+    },
+    {
+      "id": 12,
+      "name": "woodstock",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Woodstock.png/220px-Woodstock.png",
+      "count": 0
+    }
+  ]
