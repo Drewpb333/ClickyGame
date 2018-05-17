@@ -1,12 +1,3 @@
-// import React, {Component} from 'react';
-// import logo from './logo.svg';
-// import Game from './components/game';
-// import Header from './components/header';
-
-// const App = () => <Game />;
-
-// export default App;
-
 import React, { Component } from "react";
 import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
@@ -15,7 +6,6 @@ import cards from "./img/cards.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.cards to the cards json array
   state = {
     cards,
     score: 0,
@@ -52,7 +42,7 @@ class App extends Component {
       }
     });
   }
-  // Map over this.state.cards and render a cardCard component for each card object
+  // render a new component for each peanuts character
   render() {
     return (
       <Wrapper>
