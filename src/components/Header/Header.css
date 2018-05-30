@@ -7,8 +7,10 @@
   
   .title {
     float: left;
+    font-size: 30px;
   }
   
   .scores {
     float: right;
+    font-size: 28px;
   }
